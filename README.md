@@ -67,15 +67,15 @@ You will also need to add an entry to the `manifest.json` file at the root of th
 Thank you for your interest in `vs-exchange`. All forms of contribution are welcome, from issue reports to pull requests and documentation.
 
 ### Creating a Pull Request
-Make a fork of `vs-exchange`, make your changes and create a pull request from your fork against `vs-exchange:master`.
+Make a fork of `vs-exchange`, make your changes and [create a pull request](https://github.com/versionone/vs-exchange/pulls) from your fork against `vs-exchange:master`.
 
-Before you open a pull request:
+**Before you open a pull request:**
 - Validate all JSON through a linter such as https://jsonlint.com/
 - Verify that your add-on name and shape meet the standard and structure requirements described above
 - If you have questions don't hesitate to reach out!
 
 ### Questions
-If you have questions about implementation details, help, or support please create an issue and tag it with `question`.
+If you have questions about implementation details, help, or support please [create an issue](https://github.com/versionone/vs-exchange/issues) and tag it with `question`.
 
 ### Reporting Issues
-If you have found what you think is a bug, please create an issue and tag it with `bug`. Add-on authors are responsible for the ongoing maintenance of their add-ons.
+If you have found what you think is a bug, please [create an issue](https://github.com/versionone/vs-exchange/issues) and tag it with `bug`. Add-on authors are responsible for the ongoing maintenance of their add-ons.
