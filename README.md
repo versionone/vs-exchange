@@ -78,7 +78,7 @@ Make a fork of `vs-exchange`, make your changes and [create a pull request](http
 
 **Before you open a pull request:**
 - Validate all JSON through a linter such as https://jsonlint.com/
-- Verify that your Add-On meets the [Name & Shape Requirements](https://github.com/versionone/vs-exchange#name-shape-requirements) described above
+- Verify that your Add-On meets the [Name & Shape Requirements](https://github.com/versionone/vs-exchange#name--shape-requirements) described above
 - If you have questions don't hesitate to reach out!
 
 ### Questions
