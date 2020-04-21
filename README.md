@@ -17,17 +17,17 @@ The directory should contain one or more of the following subdirectories:
 
 The directory may also contain an optional registries subdirectories.
 
-The packages, pipelines, projects, and tasks subdirectories, if they exists, should contain one or more files containing the JSON representation of the appropriate type. The name of the JSON file should match the name of the item. All names in a subdirectory must be unique. An identifier unique to your Add-On should be included in all names in order to minimize the chance of a name conflict on import. We recommend prepending the name of the Add-On. 
+The packages, pipelines, projects, tasks and registries subdirectories, if they exists, should contain one or more files containing the JSON representation of the appropriate type. The name of the JSON file should match the name of the item. All names in a subdirectory must be unique. An identifier unique to your Add-On should be included in all names in order to minimize the chance of a name conflict on import. We recommend prepending the name of the Add-On. 
 
-JSON files representing Packages, Pipelines, Projects, and Tasks can be obtained via  the `ctm-export-catalog` CLI. The `ctm-export-package`, `ctm-export-pipeline`, `ctm-export-project`, and `ctm-export-task` CLI and the associated APIs can also be used. For more information see https://versionone.github.io/continuum-api-docs/.
+JSON files representing Packages, Pipelines, Projects, and Tasks can be obtained via  the `ctm-export-catalog` CLI. The `ctm-export-package`, `ctm-export-pipeline`, `ctm-export-project`, and `ctm-export-task` CLI and the associated APIs can also be used. To obtain the JSON representaion of a Registry, you can use the `get_registry` API. For more information see https://versionone.github.io/continuum-api-docs/.
 
 The canvases subdirectory, if it exists, should contain one or more subdirectories representing Canvas Projects. Each of these should directly match the output of the `ctm-export-canvas` CLI command. An identifier unique to your Add-On should be included in all Canvas Project names in order to minimize the chance of a name conflict on import. Again, we recommend using the name of the Add-On. 
 
-As a guideline, the `ctm-export-canvas` command creates one or more directories which each represent a Canvas Project. These directories have `proj_ prepended` to the name of the Canvas Project. Each `proj_` directory contains one or more subdirectories representing a Canvas Component. These subdirectories have `comp_` prepended to the name of the Canvas Component. Each `comp_` directory contains one or more files representing a Canvas Item. These files have `item_` prepended to the name of the Canvas Item.
-
-The registries subdirectory, if it exists, should contain one or more files containing the JSON representation of a global registry. The name of the JSON file should match the name of the registry. The JSON representation of a registry can be obtained via the `get_registry` API. **All registry names in the subdirectory must be unique. We recommend prepending the name of the Add-On to the registry to minimize the chance of a name conflict on import.**
+As a guideline, the `ctm-export-canvas` command creates one or more directories which each represent a Canvas Project. These directories have `proj_` prepended to the name of the Canvas Project. Each `proj_` directory contains one or more subdirectories representing a Canvas Component. These subdirectories have `comp_` prepended to the name of the Canvas Component. Each `comp_` directory contains one or more files representing a Canvas Item. These files have `item_` prepended to the name of the Canvas Item.
 
 All files should have proper extensions for the filetype. For files outside of the canvases directory, this extension should be `.json`.
+
+For an example of how your Add-On should look, see the [exchange-example Add-On](https://github.com/versionone/vs-exchange/tree/master/exchange_example)
 
 You will also need to add an entry to the `manifest.json` file at the root of the repo. The entry should include all the pieces of your Add-On and is required for your Add-On to be available through the exchange. Your entry should be added in alphabetical order by `name` inside the `add_ons` array and have the following shape:
   
