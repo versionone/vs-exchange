@@ -1,7 +1,7 @@
 {
     "category": "General",
     "description": "",
-    "name": "myTeamPipe",
+    "name": "example_myTeamPipe",
     "phases": [
         {
             "stages": [
@@ -11,5 +11,5 @@
             ]
         }
     ],
-    "team": "Team11"
+    "team": "Default"
 }

@@ -9,8 +9,8 @@
     ],
     "ConcurrentInstances": null,
     "Description": "",
-    "Name": "myTeamTask",
+    "Name": "example_myTeamTask",
     "Parameters": [],
     "QueueDepth": null,
-    "Team": "Team11"
+    "Team": "Default"
 }
