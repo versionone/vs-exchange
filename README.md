@@ -1,6 +1,16 @@
 # vs-exchange
 A place to exchange VersionOne VS automation and other system customizations.
 
+## Table of Contents
+1. [Name & Shape Requirements](#name--shape-requirements)
+    1. [API Export Commands](#api-export-commands)
+    2. [Canvases Subdirectory](#canvases-subdirectory)
+    3. [Manifest](#manifest)
+2. [Contributing](#contributing)
+    1. [Creating a Pull Request](#creating-a-pull-request)
+    2. [Questions](#questions)
+    3. [Reporting Issues](#reporting-issues)
+
 ## Name & Shape Requirements
 
 **What should an item that I want to add to the exchange contain?**
