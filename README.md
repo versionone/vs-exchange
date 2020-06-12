@@ -86,3 +86,21 @@ If you have questions about implementation details, help, or support please [cre
 
 ### Reporting Issues
 If you have found what you think is a bug, please [create an issue](https://github.com/versionone/vs-exchange/issues) and tag it with `bug`. Add-On authors are responsible for the ongoing maintenance of their Add-Ons.
+
+### API Commands
+There are a few API commands that can be run that will help with managing add ons.
+
+**Install Add On**
+```
+http://localhost:8080/api/install_add_on?name=[ADD_ON_NAME]&team=[TEAM_NAME]&token=[YOUR_API_TOKEN]
+```
+
+**Uninstall Add On**
+```
+http://localhost:8080/api/uninstall_add_on?name=[ADD_ON_NAME]&token=[YOUR_API_TOKEN]
+```
+
+**List Add Ons**
+```
+http://localhost:8080/api/list_add_ons?token=[YOUR_API_TOKEN]
+```
